@@ -15,11 +15,12 @@ function App() {
     <main>
       <Marquee>"🧛‍♀️ Welcome to Horrorville 🧛‍♀️"</Marquee>
       {/* <Button>{<FaMoneyBill />} Buy now!</Button> */}
-      <Button
+      {/* <Button
         variant
         style={{ color: "green" }}
         onClick={() => console.log("Logging in...")}
-      >
+      > */}
+      <Button size="sm" className="green">
         <FcGoogle />
         Log in with Google
       </Button>
