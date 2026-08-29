@@ -1,7 +1,7 @@
-export default function Marquee({ text }) {
+export default function Marquee(props) {
   return (
     <div className="marquee">
-      <h1>{text}</h1>
+      <h1>{props.children}</h1>
     </div>
   );
 }
