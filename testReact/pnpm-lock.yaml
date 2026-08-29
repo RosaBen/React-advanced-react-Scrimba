@@ -329,6 +329,9 @@ packages:
   ajv@6.15.0:
     resolution: {integrity: sha512-fgFx7Hfoq60ytK2c7DhnF8jIvzYgOMxfugjLOSMHjLIPgenqa7S7oaagATUq99mV6IYvN2tRmC0wnTYX6iPbMw==}
 
+  animator@0.2.2:
+    resolution: {integrity: sha512-VLoIsjWd7Epmxb+tumDDbjZ7GFgB9XXWMP9TKSU2Rpl6uwI36NBBRLRb5LLye3zA31z1QzznXN5eFvFh/WCurA==}
+
   balanced-match@4.0.4:
     resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
     engines: {node: 18 || 20 || >=22}
@@ -352,6 +355,9 @@ packages:
 
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
+
+  crel@1.0.0:
+    resolution: {integrity: sha512-FS0vLSI2k2kpzKtEOeu91jeB19TseMil71TfvW5NDOKfatPmK+WN9l0UWD6DIkr/XUsSit/qM/LjZsGgi8OauQ==}
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -712,6 +718,9 @@ packages:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
 
+  stylar@0.2.2:
+    resolution: {integrity: sha512-aKJL9gp0nFYu4s+AdSyKUMhZ2AprIWh0nHIq5whVwaGkjrxQtWaF0unvgYzbnpiBiLQz97ATgMxtNYPDYXI5Gg==}
+
   tinyglobby@0.2.17:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
@@ -1049,6 +1058,8 @@ snapshots:
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
 
+  animator@0.2.2: {}
+
   balanced-match@4.0.4: {}
 
   baseline-browser-mapping@2.11.20: {}
@@ -1068,6 +1079,8 @@ snapshots:
   caniuse-lite@1.0.30001810: {}
 
   convert-source-map@2.0.0: {}
+
+  crel@1.0.0: {}
 
   cross-spawn@7.0.6:
     dependencies:
@@ -1389,6 +1402,8 @@ snapshots:
   shebang-regex@3.0.0: {}
 
   source-map-js@1.2.1: {}
+
+  stylar@0.2.2: {}
 
   tinyglobby@0.2.17:
     dependencies:
