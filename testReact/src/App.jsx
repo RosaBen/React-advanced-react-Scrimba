@@ -16,6 +16,7 @@ function App() {
       <Marquee>"🧛‍♀️ Welcome to Horrorville 🧛‍♀️"</Marquee>
       {/* <Button>{<FaMoneyBill />} Buy now!</Button> */}
       <Button
+        variant
         style={{ color: "green" }}
         onClick={() => console.log("Logging in...")}
       >
