@@ -16,12 +16,10 @@ function App() {
     <MenuItem key={sport}>{sport}</MenuItem>
   ));
   return (
-    <>
-      <Menu>
-        <MenuBtn>Sports</MenuBtn>
-        <MenuDropdown>{listSports}</MenuDropdown>
-      </Menu>
-    </>
+    <Menu>
+      <MenuBtn>Sports</MenuBtn>
+      <MenuDropdown>{listSports}</MenuDropdown>
+    </Menu>
   );
 }
 

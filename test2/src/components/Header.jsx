@@ -2,7 +2,8 @@ import { useContext } from "react";
 import { ThemeContext } from "../App";
 
 export default function Header() {
-  const value = useContext(ThemeContext);
+  const stateObject = useContext(ThemeContext);
+  const value = stateObject.theme;
 
   return (
     <header className={`${value}-theme`}>

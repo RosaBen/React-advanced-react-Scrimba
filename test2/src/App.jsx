@@ -1,12 +1,18 @@
 import { createContext } from "react";
 import Button from "./components/Button";
 import Header from "./components/Header";
+import { useState } from "react";
 
 const ThemeContext = createContext();
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  function toggleTheme() {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  }
   return (
-    <ThemeContext.Provider value="light">
-      <div className="container light-theme">
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <div className={`container ${theme}-theme`}>
         <Header />
         <Button />
       </div>
