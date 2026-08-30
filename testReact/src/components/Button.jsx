@@ -2,18 +2,17 @@ import clsx from "clsx";
 
 export default function Button({
   children,
+  className,
   size,
   variant,
-  className,
   ...rest
 }) {
-  let classBtn = size ? `button-${size}` : "";
-  let classVariant = variant && `button-${variant}`;
+  let sizeClass = size && `button-${size}`;
+  let variantClass = variant && `button-${variant}`;
+  const allClasses = clsx(sizeClass, variantClass, className);
 
-  // size === "sm" ? (classBtn = `button-small`) : (classBtn = `button-large`);
-  const allCasses = clsx(classBtn, className, classVariant);
   return (
-    <button className={allCasses} {...rest}>
+    <button className={allClasses} {...rest}>
       {children}
     </button>
   );

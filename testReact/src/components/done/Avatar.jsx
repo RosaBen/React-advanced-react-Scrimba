@@ -1,6 +1,6 @@
 import { IoPerson } from "react-icons/io5";
-import { avatarColor } from "../assets/scripts/data";
-import { generateRandomColor } from "../assets/scripts/utils";
+import { avatarColor } from "../../assets/scripts/data";
+import { generateRandomColor } from "../../assets/scripts/utils";
 
 export default function Avatar({ src, alt, children }) {
   const color = avatarColor[generateRandomColor(avatarColor)];
