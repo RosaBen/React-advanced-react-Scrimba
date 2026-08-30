@@ -20,7 +20,19 @@ function App() {
         style={{ color: "green" }}
         onClick={() => console.log("Logging in...")}
       > */}
-      <Button size="lg" className="green">
+      <Button size="sm" className="green">
+        <FcGoogle />
+        Log in with Google
+      </Button>
+      <Button size="lg" variant="success">
+        <FcGoogle />
+        Log in with Google
+      </Button>
+      <Button size="sm" variant="danger">
+        <FcGoogle />
+        Log in with Google
+      </Button>
+      <Button size="lg" variant="warning">
         <FcGoogle />
         Log in with Google
       </Button>
