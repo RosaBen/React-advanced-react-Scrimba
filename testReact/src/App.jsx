@@ -18,11 +18,11 @@ import "./assets/styles/avatar.css";
 function App() {
   return (
     <main>
-      <Avatar src={avatarImg} alt="Rosa Ben" variant="img" />
+      <Avatar src={avatarImg} alt="Rosa Ben" />
       <br />
-      <Avatar variant="initials">RB</Avatar>
+      <Avatar>RB</Avatar>
       <br />
-      <Avatar variant="icon" />
+      <Avatar />
       {/* <Marquee>"🧛‍♀️ Welcome to Horrorville 🧛‍♀️"</Marquee> */}
       {/* <Button>{<FaMoneyBill />} Buy now!</Button> */}
       {/* <Button

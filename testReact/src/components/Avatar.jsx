@@ -5,13 +5,13 @@ import { generateRandomColor } from "../assets/scripts/utils";
 export default function Avatar({ variant, src, alt, children, ...rest }) {
   const color = avatarColor[generateRandomColor(avatarColor)];
   const style = { backgroundColor: color };
-  if (variant === "img") {
+  if (src) {
     return (
       <div className="avatar">
         <img src={src} alt={alt} />
       </div>
     );
-  } else if (variant === "initials") {
+  } else if (children) {
     return (
       <div className="avatar avatar-letters" style={style}>
         {children}
