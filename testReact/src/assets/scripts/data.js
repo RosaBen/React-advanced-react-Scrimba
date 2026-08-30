@@ -1,0 +1,1 @@
+export const avatarColor = ["navy", "pink", "red", "blue", "green"];
