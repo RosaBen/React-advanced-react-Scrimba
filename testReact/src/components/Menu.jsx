@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function Menu({ children }) {
   const [open, setOpen] = useState(false);
@@ -7,9 +7,12 @@ export default function Menu({ children }) {
   }
   return (
     <div className="menu">
-      {children}
-      {/* <MenuBtn buttonText={buttonText} onClick={toggle} />
-      {open && <MenuDropdown items={items} />} */}
+      {React.Children.map(children, (child) => {
+        return React.cloneElement(child, {
+          open,
+          toggle,
+        });
+      })}
     </div>
   );
 }
