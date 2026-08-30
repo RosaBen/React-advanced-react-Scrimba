@@ -1,10 +1,10 @@
 import { useContext, cloneElement, Children } from "react";
 import { ToggleContext } from "./Menu";
 export default function MenuDropdown({ children }) {
-  const { open } = useContext(ToggleContext);
+  const { open, menuId } = useContext(ToggleContext);
   return (
     open && (
-      <div className="menu-dropdown">
+      <div className="menu-dropdown" aria-hidden={!open} id={menuId}>
         {Children.map(children, (child) => {
           return cloneElement(child, {
             open,
