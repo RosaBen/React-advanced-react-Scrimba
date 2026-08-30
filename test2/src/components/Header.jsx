@@ -1,7 +1,12 @@
+import { useContext } from "react";
+import { ThemeContext } from "../App";
+
 export default function Header() {
+  const value = useContext(ThemeContext);
+
   return (
-    <header className="light-theme">
-      <h1>Light Theme</h1>
+    <header className={`${value}-theme`}>
+      <h1>{value === "light" ? "Light" : "Dark"} Theme</h1>
     </header>
   );
 }
