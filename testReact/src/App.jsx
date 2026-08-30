@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Menu>
-        <MenuBtn buttonText="Sports" />
+        <MenuBtn>Sports</MenuBtn>
         <MenuDropdown items={items} />
       </Menu>
     </>
