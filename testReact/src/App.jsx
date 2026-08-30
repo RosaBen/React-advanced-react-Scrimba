@@ -8,14 +8,15 @@ import Main from "./components/Main";
 import Menu from "./components/Menu";
 import MenuBtn from "./components/MenuBtn";
 import MenuDropdown from "./components/MenuDropdown";
-import { items } from "./assets/scripts/data";
+import { sports } from "./assets/scripts/data";
 
 function App() {
+  const listSports = sports.map((sport) => <MenuItem>{sport}</MenuItem>);
   return (
     <>
       <Menu>
         <MenuBtn>Sports</MenuBtn>
-        <MenuDropdown items={items} />
+        <MenuDropdown>{listSports}</MenuDropdown>
       </Menu>
     </>
   );
