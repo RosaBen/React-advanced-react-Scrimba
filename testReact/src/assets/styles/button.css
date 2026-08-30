@@ -20,11 +20,11 @@ button {
   display: flex;
   align-items: center;
 }
-/* button > svg {
+button > svg {
   margin-right: 7px;
-  color: green;
+  /* color: green; */
   width: 20px;
-} */
+}
 button.button-small {
   padding: 7px 11px;
   font-size: 12px;

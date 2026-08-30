@@ -1,7 +1,10 @@
-export default function Button({ children, size = "lg", ...rest }) {
-  const classBtn = size === "sm" ? "button-small" : "button-large";
+import clsx from "clsx";
+
+export default function Button({ children, size, className, ...rest }) {
+  const classBtn =
+    size === "sm" ? `button-small ${className}` : `button-large ${className}`;
   return (
-    <button {...rest} className={classBtn}>
+    <button className={classBtn} {...rest}>
       {children}
     </button>
   );
