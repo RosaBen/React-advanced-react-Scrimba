@@ -7,7 +7,7 @@ export default function Menu({ children }) {
     setOpen((prev) => !prev);
   }
   return (
-    <ToggleContext.Provider value={open}>
+    <ToggleContext.Provider value={{ open, toggle }}>
       <div className="menu">
         {Children.map(children, (child) => {
           return cloneElement(child, {
