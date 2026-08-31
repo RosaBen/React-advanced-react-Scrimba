@@ -17,4 +17,4 @@ Menu.Btn = MenuBtn;
 Menu.Dropdown = MenuDropdown;
 Menu.Item = MenuItem;
 
-export default { Toggle, Menu };
+export { Toggle, Menu };
