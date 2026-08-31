@@ -5,7 +5,7 @@
 // Components
 // import Button from "./components/Button";
 // import Marquee from "./components/Marquee";
-import Avatar from "./Avatar";
+import Avatar from "./done/Avatar";
 
 // images
 import avatarImg from "../assets/images/avatarRB.jpg";

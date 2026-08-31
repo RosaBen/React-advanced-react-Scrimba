@@ -1,10 +1,12 @@
 import Star from "./components/Star";
-import Toggle from "./components/Toggle";
+import Toggle from "./assets/scripts/index";
 
 function App() {
   return (
     <Toggle>
-      <Star />
+      <Toggle.Button>
+        <Star />
+      </Toggle.Button>
     </Toggle>
   );
 }
