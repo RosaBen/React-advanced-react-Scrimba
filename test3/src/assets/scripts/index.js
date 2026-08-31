@@ -1,11 +1,20 @@
-import Toggle from "../../components/Toggle";
-import ToggleButton from "../../components/ToggleButton";
-import ToggleOn from "../../components/ToggleOn";
-import ToggleOff from "../../components/ToggleOff";
+import Toggle from "../../components/Toggle/Toggle";
+import ToggleButton from "../../components/Toggle/ToggleButton";
+import ToggleOn from "../../components/Toggle/ToggleOn";
+import ToggleOff from "../../components/Toggle/ToggleOff";
+
+import Menu from "../../components/Menu/Menu";
+import MenuBtn from "../../components/Menu/MenuBtn";
+import MenuDropdown from "../../components/Menu/MenuDropdown";
+import MenuItem from "../../components/Menu/MenuItem";
 
 
 Toggle.Button = ToggleButton;
 Toggle.On = ToggleOn;
 Toggle.Off = ToggleOff;
 
-export default Toggle;
+Menu.Btn = MenuBtn;
+Menu.Dropdown = MenuDropdown;
+Menu.Item = MenuItem;
+
+export default { Toggle, Menu };
