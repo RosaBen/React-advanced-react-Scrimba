@@ -4,7 +4,7 @@ import { Menu } from "./assets/scripts/index";
 function App() {
   return (
     <>
-      <Star onChange={() => {}} />
+      <Star />
       <br />
 
       <Menu onOpen={() => console.log("test")}>
