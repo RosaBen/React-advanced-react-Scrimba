@@ -4,10 +4,10 @@ import { Menu } from "./assets/scripts/index";
 function App() {
   return (
     <>
-      <Star />
+      <Star onChange={() => {}} />
       <br />
 
-      <Menu>
+      <Menu onOpen={() => console.log("test")}>
         <Menu.Btn>Menu</Menu.Btn>
         <Menu.Dropdown>
           <Menu.Item>Home</Menu.Item>
