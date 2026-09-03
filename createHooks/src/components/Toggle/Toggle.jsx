@@ -7,10 +7,6 @@ const ToggleContext = createContext();
 export default function Toggle({ children, onToggle = () => {} }) {
   const [on, toggle] = useToggle();
 
-  function toggle() {
-    setOn((prev) => !prev);
-  }
-
   useEffectOnUpdate(onToggle, [on]);
 
   return (
