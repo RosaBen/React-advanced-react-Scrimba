@@ -1,4 +1,5 @@
 import { useState, createContext } from "react";
+import useEffectOnUpdate from "../../hooks/useEffectOnUpdate";
 
 const ToggleContext = createContext();
 
@@ -8,6 +9,8 @@ export default function Toggle({ children, onToggle = () => {} }) {
   function toggle() {
     setOn((prev) => !prev);
   }
+
+  useEffectOnUpdate(onToggle, [on]);
 
   return (
     <ToggleContext.Provider value={{ on, toggle }}>
