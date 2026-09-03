@@ -7,7 +7,3 @@ export default function Menu({ children, onOpen }) {
     </Toggle>
   );
 }
-
-// const inputRef = React.useRef(null);//create
-// inputRef.current.focus();// add in function
-// ref = { inputRef };//add in html element
