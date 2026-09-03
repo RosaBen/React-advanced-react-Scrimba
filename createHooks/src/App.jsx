@@ -1,5 +1,19 @@
+import { Toggle } from "./assets/scripts/index";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Toggle>
+        <Toggle.Button>
+          <Toggle.Display>
+            {(on) => {
+              return <div className={`box ${on ? "filled" : ""}`}></div>;
+            }}
+          </Toggle.Display>
+        </Toggle.Button>
+      </Toggle>
+    </>
+  );
 }
 
 export default App;
