@@ -3,7 +3,7 @@ import { Menu } from "./assets/scripts/index.js";
 function App() {
   return (
     <>
-      <Menu>
+      <Menu onOpen={() => console.log("Opened/closed")}>
         <Menu.Btn>Menu</Menu.Btn>
         <Menu.Dropdown>
           <Menu.Item>Home</Menu.Item>
