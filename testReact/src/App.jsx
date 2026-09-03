@@ -4,24 +4,18 @@ import "./assets/styles/marquee.css";
 import "./assets/styles/avatar.css";
 import "./assets/styles/menu.css";
 
-import Main from "./components/Main";
-import Menu from "./components/Menu";
-import MenuBtn from "./components/MenuBtn";
-import MenuDropdown from "./components/MenuDropdown";
-import MenuItem from "./components/MenuItem";
+// import Main from "./components/Main";
+import Menu from "./assets/scripts/indexMenu.js";
 import { sports } from "./assets/scripts/data";
-
 function App() {
   const listSports = sports.map((sport) => (
-    <MenuItem key={sport}>{sport}</MenuItem>
+    <Menu.Item key={sport}>{sport}</Menu.Item>
   ));
   return (
-    <>
-      <Menu>
-        <MenuBtn>Sports</MenuBtn>
-        <MenuDropdown>{listSports}</MenuDropdown>
-      </Menu>
-    </>
+    <Menu>
+      <Menu.Btn>Sports</Menu.Btn>
+      <Menu.Dropdown>{listSports}</Menu.Dropdown>
+    </Menu>
   );
 }
 
