@@ -1,8 +1,6 @@
-import { Toggle } from "../../assets/scripts/index";
+import { useContext } from "react";
+import { MenuContext } from "./Menu";
 export default function MenuDropdown({ children }) {
-  return (
-    <Toggle.On>
-      <div className="menu-dropdown">{children}</div>;
-    </Toggle.On>
-  );
+  const { open } = useContext(MenuContext);
+  return open ? <div className="menu-dropdown">{children}</div> : null;
 }

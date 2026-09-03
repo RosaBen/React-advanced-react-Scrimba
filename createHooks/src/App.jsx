@@ -1,17 +1,17 @@
-import { Toggle } from "./assets/scripts/index";
+import { Menu } from "./assets/scripts/index.js";
 
 function App() {
   return (
     <>
-      <Toggle>
-        <Toggle.Button>
-          <Toggle.Display>
-            {(on) => {
-              return <div className={`box ${on ? "filled" : ""}`}></div>;
-            }}
-          </Toggle.Display>
-        </Toggle.Button>
-      </Toggle>
+      <Menu>
+        <Menu.Btn>Menu</Menu.Btn>
+        <Menu.Dropdown>
+          <Menu.Item>Home</Menu.Item>
+          <Menu.Item>About</Menu.Item>
+          <Menu.Item>Contact</Menu.Item>
+          <Menu.Item>Blog</Menu.Item>
+        </Menu.Dropdown>
+      </Menu>
     </>
   );
 }

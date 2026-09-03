@@ -1,9 +1,14 @@
-import { Toggle } from "../../assets/scripts/index";
+import { createContext } from "react";
+import useToggle from "../../hooks/useToggle";
 
-export default function Menu({ children, onOpen }) {
+const MenuContext = createContext();
+export default function Menu({ children }) {
+  const [open, toggleOpen] = useToggle();
   return (
-    <Toggle onToggle={onOpen}>
+    <MenuContext.Provider value={{ open, toggleOpen }}>
       <div className="menu">{children}</div>
-    </Toggle>
+    </MenuContext.Provider>
   );
 }
+
+export { MenuContext };
